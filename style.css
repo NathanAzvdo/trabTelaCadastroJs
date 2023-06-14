@@ -6,6 +6,27 @@ body{
     font-family: Arial, Helvetica, sans-serif;
     background-image: linear-gradient(to right, #1e1e2c, #2d2d44);
 }
+#produtosCad{
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    position: fixed;
+    background-image: linear-gradient(to right, #93b4db, #6b256f);;
+    display: none;
+    color: #1e1e2c;
+}
+#cards{
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 15px;
+    border-radius: 15px;
+    width: 400px;
+}
 .box{
     color: #fff;
     position: absolute;
@@ -38,6 +59,7 @@ legend{
 .inputBox{
     position: relative;
 }
+
 .inputUser{
     background: none;
     border: none;

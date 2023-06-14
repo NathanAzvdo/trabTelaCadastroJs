@@ -45,7 +45,25 @@ function color(){
     else{
         btnColor.innerText="Modo Escuro"
     }
-  
+}
 
+const formulario = document.getElementById('formulario');
+
+// Adiciona o evento de envio ao formulário
+formulario.addEventListener('submit', function(event) {
+    event.preventDefault(); // Evita o envio padrão do formulário
     
+    
+  const divDestino = document.getElementById('produtosCad');
+  const produto = formulario.elements['produto'].value;
+  const preco = formulario.elements['venda'].value;
+  const Quantidade = formulario.elements['Quantidade'].value;
+  const marca = document.querySelector('input[name="Marca"]:checked').value;
+
+
+  divDestino.innerHTML = `Produto: ${produto}<br>Valor: ${preco}<br>Quantidade: ${Quantidade}<br>Marca: ${marca}`;
+});
+function produtos(){
+    const divDestino = document.getElementById('produtosCad');
+    divDestino.style.display="block";
 }

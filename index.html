@@ -12,9 +12,10 @@
 <body>
     <div class="btnDark">
         <button onclick="color()" id="btnColor">Modo escuro</button>
+        <button onclick="produtos()">Produtos</button>
     </div>
     <div class="box">
-        <form>
+        <form id="formulario">
             <fieldset id="field">
                 <legend id="leg"><b>Cadastro Produtos</b></legend>
                 <br>
@@ -23,10 +24,12 @@
                     <label for="produto" class="labelInput">Produto</label>
                 </div>
                 <p>Marca:</p>
-                <input type="radio" id="Class" name="Marca" value="Class" required>
-                <label for="Class">Class</label>
-                <br>
-                <input type="radio" id="Sufgang" name="Marca" value="Sufgang" required>
+                <div id="radios">
+
+                    <input type="radio" id="Class" name="Marca" value="Class" required>
+                    <label for="Class">Class</label>
+                    <br>
+                    <input type="radio" id="Sufgang" name="Marca" value="Sufgang" required>
                 <label for="Sufgang">Sufgang</label>
                 <br>
                 <input type="radio" id="thrasher" name="Marca" value="thrasher" required>
@@ -38,7 +41,8 @@
                 <input type="radio" id="Outras" name="Marca" value="Outras" required>
                 <label for="Outras">Outras</label>
                 
-
+                
+                </div>
                 <br><br><br>
                 <div class="inputBox">
                     <input type="text" name="custo" id="custo" onchange="calc()" class="inputUser" required>
@@ -69,6 +73,9 @@
                 <input type="submit" name="submit" id="submit" class="submit">
             </fieldset>
         </form>
+    </div>
+    <div id="produtosCad">
+        
     </div>
 </body>
 </html>
